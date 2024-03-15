@@ -1,0 +1,92 @@
+/* Table style start*/
+.table {
+    font-size: 16px;
+    border-collapse: collapse;
+}
+
+.table tr {
+    height: 1px;
+}
+
+.table th,
+.table td {
+    font-weight: normal;
+    cursor: default;
+    padding: 0 8px;
+    border: 1px solid #606060;
+}
+
+.table th {
+    background: transparent;
+    padding: 5px 8px;
+}
+
+.table td {
+    background: transparent;
+    color: #292929;
+    text-align: center;
+    height: inherit;
+    text-wrap: wrap;
+}
+
+.table td .temp_inputField {
+    display: flex;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: inherit;
+    color: inherit;
+    box-sizing: border-box;
+    background: transparent;
+    padding: 0 8px;
+    margin: 0;
+    outline: none;
+    cursor: text;
+    max-height: max-content;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+    -webkit-animation: glow .5s ease-in-out infinite alternate;
+    -moz-animation: glow .5s ease-in-out infinite alternate;
+    animation: glow .5s ease-in-out infinite alternate;
+}
+
+.table td .temp_inputField:focus{
+    animation: none;
+
+}
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 1px;
+    }
+    to {
+      text-shadow: 0 0 1px, 0 0 5px, 0 0 10px;
+    }
+}
+
+.nested-table {
+    border-collapse: collapse;
+    height: 100%;
+}
+
+.nested-table tr>td:first-child {
+    border-width: 0 0 1px 0;
+}
+
+.nested-table tr:first-child>td {
+    border-width: 0 1px 1px 0;
+}
+
+.nested-table tr:last-child>td {
+    border-width: 0 1px 0px 0;
+}
+
+.nested-table tr td:last-child {
+    border-width: 0 0 1px 0;
+}
+
+.nested-table tr:last-child>td:last-child {
+    border-width: 0;
+}
+/* Table style end */

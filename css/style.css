@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background: transparent;
+}
+
+.login-form-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form h2{
+    margin: 0;
+    text-align: center;
+}
+
+.login-form .inputBox {
+    margin-top: 20px;
+}
+
+.inputBox label {
+    color: #333;
+}
+
+.required {
+    font-size: 1.1rem;
+    color: red;
+}
+
+.inputBox input {
+    position: relative;
+    box-sizing: border-box;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.required-errorMsg {
+    border: 1px solid red;
+}
+
+.inputBox .icon {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    transform: translate(-32.5px, 19.5px);
+}
+
+.inputBox .icon>path {
+    fill: #b3b3b3;
+}
+
+.login-submit {
+    text-align: center;
+}
+
+.login-submit button{
+    height: 55px;
+    width: 50%;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 7px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: lightgray;
+}
+
+.login-submit button:hover {
+    background: gray;
+    color: #fff;
+}
+
+.login-form .invalid_UserPassword {
+    opacity: 0;
+    text-align: center;
+    color: red;
+}
